@@ -286,10 +286,11 @@ h5,
 p {
   margin: 0;
 }
-
+/*
 img {
   width: 100%;
 }
+*/
 .container {
   max-width: 1920px;
 }
@@ -455,7 +456,7 @@ img {
   width: 395px;
   height: 395px;
   display: flex;
-
+  position: relative;
   margin: 23px 0 5px;
 }
 
@@ -758,4 +759,22 @@ img {
   .container {
     min-width: 440px;
   }
+}
+
+@media (max-width: 881px) and (min-width: 769px) {
+  .head__items {
+    width: 840px;
+    max-height: 50px;
+  }
+  .head {
+    overflow: hidden;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper {
+    overflow: hidden;
+  }
+}
+.body > iframe {
+  display: none;
 }

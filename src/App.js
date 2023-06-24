@@ -1,4 +1,5 @@
 import "./App.css";
+import "./ScrollToElement";
 
 function App() {
   return (
@@ -38,9 +39,8 @@ function App() {
             <div className="item">
               <a className="menu__link" data-goto=".page__section_1" href="#">
                 O Nas
-              </a>{" "}
+              </a>
               <a className="menu__link" data-goto=".page__section_2" href="#">
-                {" "}
                 Oferta
               </a>
             </div>
