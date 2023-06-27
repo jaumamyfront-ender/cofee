@@ -1,65 +1,12 @@
 import "./App.css";
-import "./ScrollToElement";
+import Appp from "./ScrollToElement";
+import Modal from "./modal";
 
 function App() {
   return (
     <div className="container">
       <div className="wrapper">
-        <div className="head">
-          <div className="head__items">
-            <div className="burger-menu">
-              <input id="menu-toggle" type="checkbox" />
-              <label className="menu-btn" for="menu-toggle">
-                <span></span>
-              </label>
-
-              <ul className="menubox">
-                <li>
-                  <a className="menu-item" href="#">
-                    O nas
-                  </a>
-                </li>
-                <li>
-                  <a className="menu-item" href="#">
-                    Oferta
-                  </a>
-                </li>
-                <li>
-                  <a className="menu-item" href="#">
-                    Galeria
-                  </a>
-                </li>
-                <li>
-                  <a className="menu-item" href="#">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="item">
-              <a className="menu__link" data-goto=".page__section_1" href="#">
-                O Nas
-              </a>
-              <a className="menu__link" data-goto=".page__section_2" href="#">
-                Oferta
-              </a>
-            </div>
-            <div className="item">
-              <a className="menu__link" data-goto=".page__section_3" href="#">
-                Galeria
-              </a>
-              <a className="menu__link" data-goto=".page__section_4" href="#">
-                Kontakt
-              </a>
-            </div>
-            <div className="image__mobile">
-              <img src="./assets/coffeIcon.png"></img>
-            </div>
-          </div>
-          <div className="label">
-            <h1>Kawiarnia u Gabrysi</h1>
-          </div>
-        </div>
+        <Appp></Appp>
 
         <div className="description page__section_1">
           <div className="description__image">
@@ -99,45 +46,7 @@ function App() {
 
       <div className="basement " id="section1">
         <div className="basement__title page__section_3">Galeria</div>
-        <div className="basment__galery ">
-          <div className="basement__image">
-            <img src="./assets/galleryItem_1.jpg" alt="" />
-
-            <img
-              className="zoom"
-              src="./assets/itemZoom.png"
-              alt=""
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="basement__image">
-            <img src="./assets/galleryItem_3.jpg" alt="" />
-            <img
-              className="zoom"
-              src="./assets/itemZoom.png"
-              alt=""
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="basement__image">
-            <img src="./assets/galleryItem_4.jpg" alt="" />
-            <img
-              className="zoom"
-              src="./assets/itemZoom.png"
-              alt=""
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-          <div className="basement__image position">
-            <img src="./assets/imgDescOne.jpg" alt="" />
-            <img
-              className="zoom"
-              src="./assets/itemZoom.png"
-              alt=""
-              style={{ objectFit: "contain" }}
-            />
-          </div>
-        </div>
+        <Modal></Modal>
       </div>
       <div className="Kontakt__">
         <p>Kontakt</p>
