@@ -7,14 +7,16 @@ function Modal() {
   const openModal = (imageSrc) => {
     setSelectedImage(imageSrc);
     setIsOpen(true);
+    document.body.classList.add("lock");
   };
 
   const closeModal = () => {
     setIsOpen(false);
+    document.body.classList.remove("lock");
   };
 
   return (
-    <div>
+    <div className="centergalery">
       <div className="basment__galery">
         <div className="basement__image">
           <img src="./assets/galleryItem_1.jpg" alt="" />
@@ -61,10 +63,10 @@ function Modal() {
       {isOpen && (
         <div className="modal">
           <div className="modal-content">
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <img src={selectedImage} alt="" />
+            <div className="close" onClick={closeModal}>
+              X
+            </div>
+            <img src={selectedImage} alt="#" className="item__img" />
           </div>
         </div>
       )}
